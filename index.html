@@ -281,7 +281,7 @@
         <h3 class="text-3xl md:text-5xl text-center text-dark-2 mb-6 font-bold">What Our Client Say</h3>
         <p class="text-dark-3 text-center lg:w-[800px] mx-auto mb-16" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                 <!-- carousel  -->
-        <div class="bg-[url('./images/banner.png')] bg-no-repeat bg-cover p-8 lg:py-24 lg:px-32 rounded-xl">
+        <div class="bg-[url('/images/banner.png')] bg-no-repeat bg-cover p-8 lg:py-24 lg:px-32 rounded-xl">
           <div class="carousel ">
             <div id="slide1" class="carousel-item relative w-full">
               <div class="text-center text-white mx-auto flex flex-col justify-center items-center space-y-8 md:px-20 lg:py-16 ">
@@ -475,8 +475,43 @@
       
     </main>
     
-    <footer>
-
+    <footer class="bg-dark-1 py-20">
+          <section class="container mx-auto">
+            <div class="footer md:grid-cols-2 lg:grid-cols-4 text-base-content p-10 text-white">
+              <nav>
+                <img src="./images/logo.png" alt="">
+                <p class="mt-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              </nav>
+              <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+              </nav>
+              <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+              </nav>
+              <form>
+                <h6 class="footer-title">Newsletter</h6>
+                <fieldset class="form-control w-80">
+                  <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                  </label>
+                  <div class="join">
+                    <input
+                      type="text"
+                      placeholder="username@site.com"
+                      class="input input-bordered join-item" />
+                    <button class="btn bg-legal-color p-3 join-item border-none"><img class="w-6" src="./images/send.png" alt=""></button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </section>
     </footer>
 </body>
 </html>
